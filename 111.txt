@@ -454,7 +454,7 @@ kaku少儿,http://111.225.92.155:33333/hls/61/index.m3u8
 翡翠台（备）,http://line.premiumpowers.net/play/live.php?mac=00:1A:79:73:45:10&extension=ts&stream=153505
 明珠台,http://59.32.97.64:9901/tsfile/live/1078_1.m3u8
 J2,https://epg.pw/stream/1936e0180ebd92426c3868ef2bdd66c8217fbe9b33c7061122dc46c27ae56c78.ctv
-tvb经典,https://epg.pw/stream/81d660e21a3374ca0ef46619571ea42bedd6a9b474339f425b9519dae51f6368.ctv
+tvb经典,https://epg.pw/stream/168ae894743a66e4fe82fbbe66324765c88e407cbd73eea5da02232f96605acd.ctv
 tvb华丽翡翠台,https://edge6a.v2h-cdn.com/jade/jade.stream/chunklist.m3u8
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8
 tvb星河,http://r.jdshipin.com/sXuuD
