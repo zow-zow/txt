@@ -161,6 +161,7 @@ for url in urls:
                             name = name.replace("(", "")
                             name = name.replace(")", "")
                             name = re.sub(r"CCTV(\d+)台", r"CCTV\1", name)
+                            name = name.replace("CCTV1", "CCTV1综合")
                             name = name.replace("CCTV1综合", "CCTV1综合")
                             name = name.replace("CCTV2财经", "CCTV2")
                             name = name.replace("CCTV3综艺", "CCTV3")
