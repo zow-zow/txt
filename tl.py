@@ -2,6 +2,11 @@ import subprocess
 import threading
 import requests
 import time
+from datetime import datetime, timedelta
+import pytz
+
+# 定义中国时区
+china_tz = pytz.timezone('Asia/Shanghai')
 
 # 定义一个函数来启动FFmpeg进程
 def start_ffmpeg(input_url, output_url, processes):
@@ -59,12 +64,29 @@ def stop_streaming_threads(processes):
             process.terminate()  # 终止进程
             process.wait()  # 等待进程完全结束
 
-# 主循环：定期更新推流地址
-def main(url, interval):
+# 计算下一次整点时间（中国北京时间）
+def get_next_hour():
+    now = datetime.now(china_tz)
+    next_hour = now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=0.05)
+    return next_hour
+
+# 主循环：每整点更新推流地址
+def main(url):
     processes = []
+
+    # 启动脚本时立即执行一次推流
+    streams = get_streams(url)
+    start_streaming_threads(streams, processes)
+
     while True:
-        # 读取流地址
-        streams = get_streams(url)
+        # 获取当前中国北京时间
+        now = datetime.now(china_tz)
+
+        # 等待直到下一个整点
+        next_hour = get_next_hour()
+        time_to_wait = (next_hour - now).total_seconds()
+        print(f"Waiting until {next_hour.strftime('%H:%M:%S CST')} to update streams...")
+        time.sleep(time_to_wait)
 
         # 停止当前的推流进程
         stop_streaming_threads(processes)
@@ -72,15 +94,12 @@ def main(url, interval):
         # 清空进程列表
         processes.clear()
 
-        # 启动新的推流线程
+        # 读取流地址并启动新的推流线程
+        streams = get_streams(url)
         start_streaming_threads(streams, processes)
 
-        # 等待一段时间后重新读取和更新流地址
-        time.sleep(interval)
-
-# 设置URL和重新读取间隔时间（秒）
+# 设置URL
 url = 'http://8.138.87.43:2020/源/tl.txt'
-interval = 120  # 每隔5分钟重新读取一次
 
 # 启动主循环
-main(url, interval)
+main(url)
