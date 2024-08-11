@@ -1,6 +1,7 @@
 import subprocess
 import threading
 import requests
+import time
 
 # 定义一个函数来启动FFmpeg进程
 def start_ffmpeg(input_url, output_url):
@@ -41,17 +42,42 @@ def get_streams(url):
         streams.append((input_url.strip(), output_url.strip()))
     return streams
 
-# 获取流地址
+# 启动推流线程
+def start_streaming_threads(streams):
+    threads = []
+    for input_url, output_url in streams:
+        thread = threading.Thread(target=start_ffmpeg, args=(input_url, output_url))
+        thread.start()
+        threads.append(thread)
+    return threads
+
+# 停止所有正在运行的推流
+def stop_streaming_threads(threads):
+    for thread in threads:
+        if thread.is_alive():
+            # 强制停止线程并杀死FFmpeg进程
+            # 这里可以加入线程和进程的停止逻辑
+            pass
+
+# 主循环：定期更新推流地址
+def main(url, interval):
+    current_threads = []
+    while True:
+        # 读取流地址
+        streams = get_streams(url)
+
+        # 停止当前的推流线程
+        stop_streaming_threads(current_threads)
+
+        # 启动新的推流线程
+        current_threads = start_streaming_threads(streams)
+
+        # 等待一段时间后重新读取和更新流地址
+        time.sleep(interval)
+
+# 设置URL和重新读取间隔时间（秒）
 url = 'http://8.138.87.43:2020/源/tl.txt'
-streams = get_streams(url)
+interval = 120  # 每隔5分钟重新读取一次
 
-# 为每个流启动一个独立的线程来推流
-threads = []
-for input_url, output_url in streams:
-    thread = threading.Thread(target=start_ffmpeg, args=(input_url, output_url))
-    thread.start()
-    threads.append(thread)
-
-# 等待所有线程结束
-for thread in threads:
-    thread.join()
+# 启动主循环
+main(url, interval)
