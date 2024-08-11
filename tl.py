@@ -5,7 +5,7 @@ ffmpeg_command = [
     'ffmpeg',  
     '-re',  
     '-stream_loop', '-1',  
-    '-i', 'http://124.225.108.170/hlslive-tx-cdn.ysp.cctv.cn/sx/2024078203.m3u8',  # 替换为你的输入流URL  
+    '-i', 'http://95.179.139.113:5566/4gtv/2',  # 替换为你的输入流URL  
     '-bsf:a', 'aac_adtstoasc',  
     '-vcodec', 'copy',  
     '-acodec', 'copy',  
