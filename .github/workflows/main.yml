@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-    
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -22,6 +22,11 @@ jobs:
 
       - name: Install dependencies
         run: pip install selenium requests futures eventlet
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
 
       - name: Run itv_all
         run: python ${{ github.workspace }}/tl.py
