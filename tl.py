@@ -1,5 +1,6 @@
 import subprocess
 import threading
+import requests
 
 # 定义一个函数来启动FFmpeg进程
 def start_ffmpeg(input_url, output_url):
@@ -21,7 +22,6 @@ def start_ffmpeg(input_url, output_url):
 
     try:
         process = subprocess.Popen(ffmpeg_command, stderr=subprocess.PIPE)
-        # 读取并打印FFmpeg进程的输出
         while True:
             line = process.stderr.readline().decode('utf-8').strip()
             if not line:
@@ -31,15 +31,19 @@ def start_ffmpeg(input_url, output_url):
     except Exception as e:
         print(f"An error occurred while streaming {input_url}: {e}")
 
-# 输入流和对应的推流地址
-streams = [
-    ('http://95.179.139.113:5566/4gtv/1', 'rtmp://ali.push.yximgs.com/live/cs1'),
-    ('http://95.179.139.113:5566/4gtv/2', 'rtmp://ali.push.yximgs.com/live/cs2'),
-    ('http://95.179.139.113:5566/4gtv/4', 'rtmp://ali.push.yximgs.com/live/cs3'),
-    ('http://95.179.139.113:5566/4gtv/6', 'rtmp://ali.push.yximgs.com/live/cs4'),
-    ('http://95.179.139.113:5566/4gtv/7', 'rtmp://ali.push.yximgs.com/live/cs5'),  
-    ('http://95.179.139.113:5566/4gtv/8', 'rtmp://ali.push.yximgs.com/live/cs6')
-]
+# 从指定URL读取输入流和推流地址
+def get_streams(url):
+    response = requests.get(url)
+    lines = response.text.strip().splitlines()
+    streams = []
+    for line in lines:
+        input_url, output_url = line.split(',')
+        streams.append((input_url.strip(), output_url.strip()))
+    return streams
+
+# 获取流地址
+url = 'http://8.138.87.43:2020/源/tl.txt'
+streams = get_streams(url)
 
 # 为每个流启动一个独立的线程来推流
 threads = []
