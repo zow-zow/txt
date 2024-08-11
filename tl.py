@@ -67,7 +67,7 @@ def stop_streaming_threads(processes):
 # 计算下一次整点时间（中国北京时间）
 def get_next_hour():
     now = datetime.now(china_tz)
-    next_hour = now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=0.5)
+    next_hour = now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=0.6)
     return next_hour
 
 # 主循环：每整点更新推流地址
