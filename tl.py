@@ -4,7 +4,7 @@ import requests
 import time
 
 # 定义一个函数来启动FFmpeg进程
-def start_ffmpeg(input_url, output_url):
+def start_ffmpeg(input_url, output_url, processes):
     ffmpeg_command = [
         'ffmpeg',
         '-re',
@@ -23,6 +23,7 @@ def start_ffmpeg(input_url, output_url):
 
     try:
         process = subprocess.Popen(ffmpeg_command, stderr=subprocess.PIPE)
+        processes.append(process)
         while True:
             line = process.stderr.readline().decode('utf-8').strip()
             if not line:
@@ -43,34 +44,36 @@ def get_streams(url):
     return streams
 
 # 启动推流线程
-def start_streaming_threads(streams):
+def start_streaming_threads(streams, processes):
     threads = []
     for input_url, output_url in streams:
-        thread = threading.Thread(target=start_ffmpeg, args=(input_url, output_url))
+        thread = threading.Thread(target=start_ffmpeg, args=(input_url, output_url, processes))
         thread.start()
         threads.append(thread)
     return threads
 
 # 停止所有正在运行的推流
-def stop_streaming_threads(threads):
-    for thread in threads:
-        if thread.is_alive():
-            # 强制停止线程并杀死FFmpeg进程
-            # 这里可以加入线程和进程的停止逻辑
-            pass
+def stop_streaming_threads(processes):
+    for process in processes:
+        if process.poll() is None:  # 检查进程是否仍在运行
+            process.terminate()  # 终止进程
+            process.wait()  # 等待进程完全结束
 
 # 主循环：定期更新推流地址
 def main(url, interval):
-    current_threads = []
+    processes = []
     while True:
         # 读取流地址
         streams = get_streams(url)
 
-        # 停止当前的推流线程
-        stop_streaming_threads(current_threads)
+        # 停止当前的推流进程
+        stop_streaming_threads(processes)
+
+        # 清空进程列表
+        processes.clear()
 
         # 启动新的推流线程
-        current_threads = start_streaming_threads(streams)
+        start_streaming_threads(streams, processes)
 
         # 等待一段时间后重新读取和更新流地址
         time.sleep(interval)
