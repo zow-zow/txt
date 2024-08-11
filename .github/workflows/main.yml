@@ -1,10 +1,10 @@
 name: tl
 
-#on:
+on:
   #schedule:
   #  - cron: '0 3,9,15,21 * * *'
-  #push:
-  #  branches:
+  push:
+    branches:
       - main
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install selenium requests futures eventlet
+        run: pip install selenium requests futures eventlet pytz
 
       - name: Install FFmpeg
         run: |
