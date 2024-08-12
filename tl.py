@@ -34,7 +34,7 @@ def start_ffmpeg(input_url, output_url, processes):
             if not line:
                 break
             #print(line)
-            print(f"successfully started streaming {input_url} to {output_url}")
+            #print(f"successfully started streaming {input_url} to {output_url}")
         process.wait()
     except Exception as e:
         print(f"An error occurred while streaming {input_url}: {e}")
