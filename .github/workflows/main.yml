@@ -3,9 +3,11 @@ name: tl
 on:
   #schedule:
   #  - cron: '0 3,9,15,21 * * *'
+  workflow_dispatch:
   push:
     branches:
       - main
+      
 
 jobs:
   build:
