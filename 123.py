@@ -5,7 +5,7 @@ ffmpeg_command = [
     'ffmpeg',  
     '-re',  
     '-stream_loop', '-1',  
-    '-i', 'https://ocean.ofiii.com/hls/v1/playlist/MZmWfxurYXk/litv-longturn14-avc1_6000000=1-mp4a_166000_zho=6.m3u8',  # 替换为你的输入流URL  
+    '-i', 'https://ushls.ballbar.net/jade_twn/playlist-15.m3u8a?t=1723565982&token=74d39a912929528f4321d89072184780',  # 替换为你的输入流URL  
     '-bsf:a', 'aac_adtstoasc',  
     '-vcodec', 'copy',  
     '-acodec', 'copy',  
