@@ -31,7 +31,7 @@ jobs:
           sudo apt-get install -y ffmpeg
 
       - name: Run itv_all
-        run: python ${{ github.workspace }}/tl.py
+        run: python ${{ github.workspace }}/123.py
 
       #- name: Run cctv
         #run: python ${{ github.workspace }}/cctv.py
