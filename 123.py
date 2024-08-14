@@ -5,7 +5,7 @@ ffmpeg_command = [
     'ffmpeg',  
     '-re',  
     '-stream_loop', '-1',  
-    '-i', 'https://ushls.ballbar.net/jade_twn/playlist-15.m3u8a?t=1723565982&token=74d39a912929528f4321d89072184780',  # 替换为你的输入流URL  
+    '-i', 'https://hls.watchtv.uk/ctizhonghe/playlist-17.m3u8a?t=1723629254&token=cd517dca16100f4fbf4a3754d4396008',  # 替换为你的输入流URL  
     '-bsf:a', 'aac_adtstoasc',  
     '-vcodec', 'copy',  
     '-acodec', 'copy',  
