@@ -3,8 +3,6 @@ import requests
 import re
 import concurrent.futures
 
-print("Starting script...")
-
 # 设置请求头
 headers = {
     'Host': 'freegat.us.kg',
@@ -17,52 +15,8 @@ headers = {
     'Cookie': 'PHPSESSID=65s16sjaus4iag4amk00onk3d3',
     'Proxy-Connection': 'keep-alive'
 }
+response = requests.get('http://freegat.us.kg/', headers=headers)
+print(response.text)
 
-output_file = 'output.txt'  # 设置输出文件路径
-
-def get_video_urls(channel):
-    try:
-        channel_name = channel.find('a').text.strip()  # 获取频道名
-        channel_url = channel.find('a')['href']  # 获取频道链接
-        response = requests.get(channel_url, headers=headers)
-        pattern = re.compile(r'videoUrl: "(.*?)"', re.S)
-        video_urls = re.findall(pattern, response.text)
-        results = []
-        if video_urls:
-            for video_url in video_urls:
-                results.append(f"{channel_name},{video_url}")
-        return results
-    except Exception as e:
-        return [f"处理频道时出错: {e}"]
-
-try:
-    response = requests.get('http://freegat.us.kg/', headers=headers)
-
-    if response.status_code == 200:
-        html_content = response.text
-        # 使用BeautifulSoup解析HTML内容
-        soup = BeautifulSoup(html_content, 'html.parser')
-        # 查找所有频道的<li>标签
-        channels = soup.find_all('li', class_='channel')
-        
-        # 打开文件，以写入模式，如果文件不存在则会自动创建
-        with open(output_file, 'w', encoding='utf-8') as file:
-            # 使用多线程处理频道链接
-            with concurrent.futures.ThreadPoolExecutor() as executor:
-                futures = [executor.submit(get_video_urls, channel) for channel in channels]
-                for future in concurrent.futures.as_completed(futures):
-                    for result in future.result():
-                        if "未找到视频流地址" not in result:  # 过滤掉未找到视频流地址的情况
-                            print(result)
-                            file.write(result + '\n')  # 写入文件
-                            print(f"Output written to {output_file}")
-
-        print(f"Results have been written to {output_file}")
-
-    else:
-        print("无法获取网页内容")
-
-except Exception as e:
-    print(f"Script failed with error: {e}")
-
-print("Script executed successfully.")
+with open('output.txt', 'w', encoding='utf-8') as file:
+    file.write(response.text)
