@@ -1,68 +1,55 @@
+from bs4 import BeautifulSoup
 import requests
 import re
+import concurrent.futures
 
-# 定义电视频道映射
-n = {
-    '1': 'tv-show-20052-3',  # 翡翠台
-    '2': 'tv-show-20058-3',  # 明珠台
-    '3': 'tv-show-20053-2',  # 无线新闻
-
-    '55': 'tv-show-20086-1',  # 东森综合台
-    '56': 'tv-show-20087-1',  # 东森超视
-
-    '74': 'tv-show-20105-1',  # 壹新闻
-
-    '76': 'tv-show-20107-1',  # 年代新闻
-
+# 设置请求头
+headers = {
+    'Host': 'freegat.us.kg',
+    'Cache-Control': 'max-age=0',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 XiaoBai1/10.4.5312.1827 (XBCEF)',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Accept-Encoding': 'gzip, deflate',
+    'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6',
+    'Cookie': 'PHPSESSID=65s16sjaus4iag4amk00onk3d3',
+    'Proxy-Connection': 'keep-alive'
 }
 
-def get_liveurl(id):
-    url = f'https://www.xhzb.tw/{n[id]}.html'
-    response = requests.get(url)
-    response.encoding = 'utf-8'
+def get_video_urls(channel):
+    try:
+        channel_name = channel.find('a').text.strip()  # 获取频道名
+        channel_url = channel.find('a')['href']  # 获取频道链接
+        response = requests.get(channel_url, headers=headers)
+        pattern = re.compile(r'videoUrl: "(.*?)"', re.S)
+        video_urls = re.findall(pattern, response.text)
+        results = []
+        if video_urls:
+            for video_url in video_urls:
+                results.append(f"{channel_name},{video_url}")
+        return results
+    except Exception as e:
+        return [f"处理频道时出错: {e}"]
+
+response = requests.get('http://freegat.us.kg/', headers=headers)
+
+if response.status_code == 200:
     html_content = response.text
+    # 使用BeautifulSoup解析HTML内容
+    soup = BeautifulSoup(html_content, 'html.parser')
+    # 查找所有频道的<li>标签
+    channels = soup.find_all('li', class_='channel')
     
-    match = re.search(r'<input name="ps" id="ps" type="hidden" value="([^"]+)">', html_content)
-    if match:
-        psValue = match.group(1)
-        post_url = 'https://www.xhzb.tw/get_video.php'
-        post_data = {'vu': psValue}
-        headers = {
-            'Host': 'www.xhzb.tw',
-            'Content-Length': '59',
-            'sec-ch-ua': '"Chromium";v="123", "Not:A-Brand";v="8"',
-            'content-type': 'application/x-www-form-urlencoded',
-            'x-requested-with': 'XMLHttpRequest',
-            'sec-ch-ua-mobile': '?0',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
-            'sec-ch-ua-platform': '"Windows"',
-            'origin': 'https://www.xhzb.tw',
-            'sec-fetch-site': 'same-origin',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-dest': 'empty',
-            'referer': url,
-        }
-        response = requests.post(post_url, data=post_data, headers=headers)
-        response.encoding = 'utf-8'
-        match = re.search(r'video-url="([^"]+)', response.text)
-        if match:
-            liveurl = match.group(1)
-            print(f'{id} {liveurl}')
-            return f'{liveurl},rtmp://ali.push.yximgs.com/live/ttt80182503722594288llltw{id}'
-    return None
+    # 打开文件，以写入模式，如果文件不存在则会自动创建
+    with open('gt.txt', 'w', encoding='utf-8') as file:
+        # 使用多线程处理频道链接
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = [executor.submit(get_video_urls, channel) for channel in channels]
+            for future in concurrent.futures.as_completed(futures):
+                for result in future.result():
+                    if "未找到视频流地址" not in result:  # 过滤掉未找到视频流地址的情况
+                        print(result)
+                        file.write(result + '\n')  # 写入文件
 
-def process_channel(id):
-    result = get_liveurl(id)
-
-    if result:
-        return result
-
-if __name__ == "__main__":
-    results = []
-    for id in n:
-        result = process_channel(id)
-        if result:
-            results.append(result)
-
-    for result in results:
-        print(result)
+else:
+    print("无法获取网页内容")
