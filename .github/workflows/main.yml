@@ -36,7 +36,7 @@ jobs:
       #    sudo apt-get install -y ffmpeg
 
       - name: Run itv_all
-        run: python ${{ github.workspace }}/cs.py
+        run: python ${{ github.workspace }}/123.py
 
       - name: 提交更改
         run: |
