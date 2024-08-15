@@ -24,12 +24,15 @@ def get_video_urls(channel):
         response = requests.get(channel_url, headers=headers)
         pattern = re.compile(r'videoUrl: "(.*?)"', re.S)
         video_urls = re.findall(pattern, response.text)
-        print(video_urls)
+
         results = []
         if video_urls:
             for video_url in video_urls:
                 results.append(f"{channel_name},{video_url}")
+                print(f"{channel_name},{video_url}")
         return results
+    
+    
     except Exception as e:
         return [f"处理频道时出错: {e}"]
 
@@ -48,7 +51,3 @@ if response.status_code == 200:
         # 使用多线程处理频道链接
         with concurrent.futures.ThreadPoolExecutor() as executor:
             futures = [executor.submit(get_video_urls, channel) for channel in channels]
-            for future in concurrent.futures.as_completed(futures):
-                for result in future.result():
-                    if "未找到视频流地址" not in result:  # 过滤掉未找到视频流地址的情况
-                        print(result)
