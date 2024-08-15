@@ -3,6 +3,8 @@ import requests
 import re
 import concurrent.futures
 
+
+print("Starting script...")
 # 设置请求头
 headers = {
     'Host': 'freegat.us.kg',
@@ -54,3 +56,4 @@ if response.status_code == 200:
 
 else:
     print("无法获取网页内容")
+print("Script executed successfully.")
