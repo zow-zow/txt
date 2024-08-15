@@ -3,7 +3,7 @@ import requests
 url = "http://freegat.us.kg/"
 
 response = requests.get(url)
-
+print(response.text)
 if response.status_code == 200:
     content = response.text
     # 将内容写入到txt文件
