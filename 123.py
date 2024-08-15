@@ -35,5 +35,9 @@ response = requests.get('http://freegat.us.kg/', headers=headers)
 
 if response.status_code == 200:
     html_content = response.text
-
-print(html_content)
+    ##print(html_content)
+    # 使用BeautifulSoup解析HTML内容
+    soup = BeautifulSoup(html_content, 'html.parser')
+    # 查找所有频道的<li>标签
+    channels = soup.find_all('li', class_='channel')
+    print(f"共找到{len(channels)}个频道")
