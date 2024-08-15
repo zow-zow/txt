@@ -20,10 +20,11 @@ def get_video_urls(channel):
     try:
         channel_name = channel.find('a').text.strip()  # 获取频道名
         channel_url = channel.find('a')['href']  # 获取频道链接
-        print(f"正在处理频道: {channel_url}")
+        #print(f"正在处理频道: {channel_url}")
         response = requests.get(channel_url, headers=headers)
         pattern = re.compile(r'videoUrl: "(.*?)"', re.S)
         video_urls = re.findall(pattern, response.text)
+        print(video_urls)
         results = []
         if video_urls:
             for video_url in video_urls:
