@@ -35,21 +35,5 @@ response = requests.get('http://freegat.us.kg/', headers=headers)
 
 if response.status_code == 200:
     html_content = response.text
-    # 使用BeautifulSoup解析HTML内容
-    soup = BeautifulSoup(html_content, 'html.parser')
-    # 查找所有频道的<li>标签
-    channels = soup.find_all('li', class_='channel')
-    
-    # 打开文件，以写入模式，如果文件不存在则会自动创建
-    with open('output33.txt', 'w', encoding='utf-8') as file:
-        # 使用多线程处理频道链接
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = [executor.submit(get_video_urls, channel) for channel in channels]
-            for future in concurrent.futures.as_completed(futures):
-                for result in future.result():
-                    if "未找到视频流地址" not in result:  # 过滤掉未找到视频流地址的情况
-                        print(result)
-                        file.write(result + '\n')  # 写入文件
 
-else:
-    print("无法获取网页内容")
+print(html_content)
