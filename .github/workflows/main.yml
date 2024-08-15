@@ -1,13 +1,18 @@
 name: tl
 
 on:
-  #schedule:
-  #  - cron: '0 3,9,15,21 * * *'
+  schedule:
+    #- cron: '30 19,22,1,4,7,10,13,16 * * *' # 每天的第3小时30分触发一次
+    - cron: '30 1,4,7,10,13,23 * * *'
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      
+  #push:
+  #  branches:
+  #    - main
+
+# 在新工作流实例开始之前，自动取消任何正在运行的实例
+concurrency:
+  group: "tl-workflow" 
+  cancel-in-progress: true 
 
 jobs:
   build:
@@ -27,27 +32,17 @@ jobs:
 
      # - name: Install FFmpeg
      #   run: |
-     #     sudo apt-get update
-     #     sudo apt-get install -y ffmpeg
+      #    sudo apt-get update
+      #    sudo apt-get install -y ffmpeg
 
       - name: Run itv_all
-        run: python ${{ github.workspace }}/123.py
+        run: python ${{ github.workspace }}/cs.py
 
-      #- name: Run cctv
-        #run: python ${{ github.workspace }}/cctv.py
-        
-      #- name: Run weishi
-        #run: python ${{ github.workspace }}/weishi.py
-        
-      #- name: Run qita
-        #run: python ${{ github.workspace }}/qita.py
-        
       - name: 提交更改
         run: |
-          git config --local user.email "191049659@qq.com"
-          git config --local user.name "zow-zow"
-          git add .
-          git commit *.txt -m "Add generated file"
-          #git commit *.m3u -m "Add generated file"
-          #git pull --rebase
-          #git push -f
+          git config --local user.email "2032074374@qq.com"
+          git config --local user.name "zow1"
+          git add *.txt
+          git commit -m "Add generated file"
+          git pull --rebase
+          git push -f
