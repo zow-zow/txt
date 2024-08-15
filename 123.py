@@ -22,6 +22,7 @@ def get_video_urls(channel):
         channel_url = channel.find('a')['href']  # 获取频道链接
         #print(f"正在处理频道: {channel_url}")
         response = requests.get(channel_url, headers=headers)
+        print(response.text)
         pattern = re.compile(r'videoUrl: "(.*?)"', re.S)
         video_urls = re.findall(pattern, response.text)
 
@@ -29,7 +30,7 @@ def get_video_urls(channel):
         if video_urls:
             for video_url in video_urls:
                 results.append(f"{channel_name},{video_url}")
-                print(f"{channel_name},{video_url}")
+                #print(f"{channel_name},{video_url}")
         return results
     
     
