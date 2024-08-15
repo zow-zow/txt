@@ -50,6 +50,7 @@ if response.status_code == 200:
                     if "未找到视频流地址" not in result:  # 过滤掉未找到视频流地址的情况
                         print(result)
                         file.write(result + '\n')  # 写入文件
+                        print(f"Output written to {output_file}")
 
 else:
     print("无法获取网页内容")
