@@ -5,7 +5,7 @@ ffmpeg_command = [
     'ffmpeg',  
     '-re',  
     '-stream_loop', '-1',  
-    '-i', 'http://zowzow.yundown.cf/php/nntvqqq31060593099zzz.php?id=145',  # 替换为你的输入流URL  
+    '-i', 'https://stream1.freetv.fun/44bd1ba645adb14b4f6ea64c0fd9764c02a373898e39bff7c06dc9afe931053d.m3u8',  # 替换为你的输入流URL  
     '-bsf:a', 'aac_adtstoasc',  
     '-vcodec', 'copy',  
     '-acodec', 'copy',  
