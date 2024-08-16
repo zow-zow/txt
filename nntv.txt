@@ -1,163 +1,172 @@
-美亚电影,https://ushls.ballbar.net/meiyamovie_twn/playlist-12.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-东森幼幼,https://ushls.ballbar.net/yoyo_twn/playlist-15.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-爱尔达影剧,https://ushls.ballbar.net/eltayingju_twn/playlist-12.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-爱尔达综合,https://ushls.ballbar.net/eltazonghe/playlist-12.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-卫视电影,https://ushls.ballbar.net/weishimovie_twn/playlist-15.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-EYETV戏剧,https://ushls.ballbar.net/eyetvxiju_twn/playlist-15.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-AFC亚洲旅游,https://ushls.ballbar.net/asiatravel_twn/playlist-12.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-星空电影,https://ushls.ballbar.net/xingkong_movie/playlist-12.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-EYETV旅游,https://ushls.ballbar.net/eyetvtravel_twn/playlist-15.m3u8a?t=1723820507&token=c305a4a748fe9f4a3aaaeae49fcd17a9
-星卫电影,https://ushls.ballbar.net/xingwei_movie/playlist-12.m3u8a?t=1723820508&token=f1dd9a7ca897d80484eb27b76910c485
-博斯无限,https://ushls.ballbar.net/bosiunlimited_twn/playlist-12.m3u8a?t=1723820510&token=e1b864147694eb03e56ced22feba1a43
-卫视中文,https://ushls.ballbar.net/weishichinese_twn/playlist-15.m3u8a?t=1723820511&token=97c9231c9bfb59fdede141042136b72d
-MTVLive,https://ushls.ballbar.net/mtvhd_twn/playlist-15.m3u8a?t=1723820511&token=97c9231c9bfb59fdede141042136b72d
-博斯高球2,https://ushls.ballbar.net/bosigolf2_twn/playlist-12.m3u8a?t=1723820512&token=a8cc90c251d8b484fb863a6c9138a5e2
-龙详时代,https://ushls.ballbar.net/eltayingju_twn/playlist-12.m3u8a?t=1723820512&token=a8cc90c251d8b484fb863a6c9138a5e2
-博斯运动2,https://ushls.ballbar.net/bosisport2_twn/playlist-12.m3u8a?t=1723820512&token=a8cc90c251d8b484fb863a6c9138a5e2
-阿里郎,https://ushls.ballbar.net/arirang_twn/playlist-12.m3u8a?t=1723820512&token=a8cc90c251d8b484fb863a6c9138a5e2
-靖天卡通,https://ushls.ballbar.net/jingtiancartoon_twn/playlist-12.m3u8a?t=1723820512&token=a8cc90c251d8b484fb863a6c9138a5e2
-AFC亚洲旅游(备),https://ushls.ballbar.net/tlc_twn/playlist-12.m3u8a?t=1723820514&token=c31ae7610a99d233ac720dc65dad9d6d
-美食星球,https://ushls.ballbar.net/foodplanet_twn/playlist-12.m3u8a?t=1723820514&token=c31ae7610a99d233ac720dc65dad9d6d
-亚洲美食,https://ushls.ballbar.net/afc_twn/playlist-12.m3u8a?t=1723820515&token=bdfa5ca173261dc63d072e4af316d83f
-博斯网球,https://ushls.ballbar.net/bositennis_twn/playlist-12.m3u8a?t=1723820515&token=bdfa5ca173261dc63d072e4af316d83f
-好消息2,https://ushls.ballbar.net/good2_twn/playlist-12.m3u8a?t=1723820516&token=78c326fd0eb5677365ab2b5f38d58268
-纬来精彩,https://ushls.ballbar.net/videolandspecial_twn/playlist-12.m3u8a?t=1723820516&token=78c326fd0eb5677365ab2b5f38d58268
-博斯运动1,https://ushls.ballbar.net/bosisport1_twn/playlist-12.m3u8a?t=1723820516&token=78c326fd0eb5677365ab2b5f38d58268
-龙华洋片,https://ushls.ballbar.net/lunghuawestern_twn/playlist-12.m3u8a?t=1723820516&token=78c326fd0eb5677365ab2b5f38d58268
-纬来综合,https://ushls.ballbar.net/videolandzong/playlist-12.m3u8a?t=1723820517&token=c1f08ad871922505b5f6927ef560c5ec
-纬来育乐,https://ushls.ballbar.net/videolandyule/playlist-12.m3u8a?t=1723820517&token=c1f08ad871922505b5f6927ef560c5ec
-纬来体育,https://ushls.ballbar.net/videolandsport/playlist-12.m3u8a?t=1723820518&token=ffed3d813e95a8a44f290dc7e10f5055
-纬来戏剧,https://ushls.ballbar.net/videolandxiju_twn/playlist-12.m3u8a?t=1723820518&token=ffed3d813e95a8a44f290dc7e10f5055
-靖天咨询,https://ushls.ballbar.net/jingtianinfo_twn/playlist-12.m3u8a?t=1723820519&token=4f232e52130fbb9691d18912cd139e9a
-靖天国际,https://ushls.ballbar.net/jingtianintl_twn/playlist-12.m3u8a?t=1723820519&token=4f232e52130fbb9691d18912cd139e9a
-年代新闻,https://ushls.ballbar.net/niandainews_twn/playlist-12.m3u8a?t=1723820520&token=763da635471dfe4a5c7ae59d1a298569
-龙华电影,https://ushls.ballbar.net/lunghuamovie_twn/playlist-12.m3u8a?t=1723820520&token=763da635471dfe4a5c7ae59d1a298569
-龙华偶像,https://ushls.ballbar.net/lunghuaidol_twn/playlist-12.m3u8a?t=1723820520&token=763da635471dfe4a5c7ae59d1a298569
-纬来日本,https://ushls.ballbar.net/videolandjapan/playlist-12.m3u8a?t=1723820520&token=763da635471dfe4a5c7ae59d1a298569
-纬来电影,https://ushls.ballbar.net/videolandmovie/playlist-12.m3u8a?t=1723820521&token=097969762909020b4265a14a6d708d0e
-龙华经典,https://ushls.ballbar.net/lunghuajingdian_twn/playlist-12.m3u8a?t=1723820521&token=097969762909020b4265a14a6d708d0e
-龙华戏剧,https://ushls.ballbar.net/lunghuaxiju_twn/playlist-12.m3u8a?t=1723820522&token=943b17d74bc8196d4c65b104e6241bec
-大爱1,https://ushls.ballbar.net/daai_twn/playlist-12.m3u8a?t=1723820523&token=e9bbbd71795958f2829abb6fd3f161b7
-寰宇新闻,https://ushls.ballbar.net/huanyuxinwen_twn/playlist-12.m3u8a?t=1723820523&token=e9bbbd71795958f2829abb6fd3f161b7
-寰宇财经,https://ushls.ballbar.net/huanyutaiwan_twn/playlist-12.m3u8a?t=1723820523&token=e9bbbd71795958f2829abb6fd3f161b7
-东森超视,https://ushls.ballbar.net/ettvsuper/playlist-12.m3u8a?t=1723820524&token=a53e032b88d77fe1b7c71fd500dd7748
-非凡新闻,https://ushls.ballbar.net/feifannews_twn/playlist-12.m3u8a?t=1723820524&token=a53e032b88d77fe1b7c71fd500dd7748
-东森戏剧,https://ushls.ballbar.net/ettvdrama/playlist-12.m3u8a?t=1723820525&token=8a3ce52216d589254b99677251a771d8
-东森综合,https://ushls.ballbar.net/ettvzhonghe/playlist-12.m3u8a?t=1723820525&token=8a3ce52216d589254b99677251a771d8
-东森财经,https://ushls.ballbar.net/ettvcaijing_twn/playlist-12.m3u8a?t=1723820526&token=4b45b3348902f730ec0fa64ccc6082e4
-东森洋片,https://ushls.ballbar.net/ettvwestern/playlist-12.m3u8a?t=1723820526&token=4b45b3348902f730ec0fa64ccc6082e4
-三立综合,https://ushls.ballbar.net/sanlizhonghe/playlist-12.m3u8a?t=1723820527&token=fadde7362e6411eff0048b91907e959a
-东森新闻,https://ushls.ballbar.net/ettvnews/playlist-12.m3u8a?t=1723820526&token=4b45b3348902f730ec0fa64ccc6082e4
-东森电影,https://ushls.ballbar.net/ettvmovie/playlist-12.m3u8a?t=1723820526&token=4b45b3348902f730ec0fa64ccc6082e4
-三立都会,https://ushls.ballbar.net/sanlidouhui_twn/playlist-12.m3u8a?t=1723820527&token=fadde7362e6411eff0048b91907e959a
-三立台湾,https://ushls.ballbar.net/sanlitaiwan/playlist-12.m3u8a?t=1723820528&token=027e18df3274cd0d3a4439b2e9f50e8a
-AXNTaiwan,https://ushls.ballbar.net/axn_twn/playlist-12.m3u8a?t=1723820528&token=027e18df3274cd0d3a4439b2e9f50e8a
-三立戏剧,https://ushls.ballbar.net/sanlixiju_twn/playlist-12.m3u8a?t=1723820529&token=9d53cd00b235c07214cf49168aca95a7
-CatchPlay电影,https://ushls.ballbar.net/catchplay_twn/playlist-12.m3u8a?t=1723820530&token=487671559a53d208da89fbc743d8eb18
-HBO_HITS,https://ushls.ballbar.net/hbohead_twn/playlist-12.m3u8a?t=1723820530&token=487671559a53d208da89fbc743d8eb18
-CINEMAX,https://ushls.ballbar.net/cinemax_twn/playlist-12.m3u8a?t=1723820530&token=487671559a53d208da89fbc743d8eb18
-八大娱乐,https://ushls.ballbar.net/badaentertainment/playlist-12.m3u8a?t=1723820530&token=487671559a53d208da89fbc743d8eb18
-HollywoodMovies,https://ushls.ballbar.net/hollywoodmovies_twn/playlist-12.m3u8a?t=1723820530&token=487671559a53d208da89fbc743d8eb18
-八大综合,https://ushls.ballbar.net/badazhonghe/playlist-12.m3u8a?t=1723820531&token=de2fea52bf4fe5d11de41a750bea00e0
-HBO_,https://ushls.ballbar.net/hbohd_twn/playlist-12.m3u8a?t=1723820531&token=de2fea52bf4fe5d11de41a750bea00e0
-八大戏剧,https://ushls.ballbar.net/badadrama/playlist-12.m3u8a?t=1723820531&token=de2fea52bf4fe5d11de41a750bea00e0
-八大第一,https://ushls.ballbar.net/badafirst/playlist-12.m3u8a?t=1723820532&token=98590a5a7ae7698f84d95cbbf50ab2a5
-公视,https://ushls.ballbar.net/ctv_taiwan/playlist-12.m3u8a?t=1723820533&token=60b24c9295c92ab0c86f68b13bf465ae
-民视台湾,https://ushls.ballbar.net/ftvtaiwan_twn/playlist-12.m3u8a?t=1723820534&token=c6d4cf87460346092e1f76a8122583c4
-民视,https://ushls.ballbar.net/ftvhd_taiwan/playlist-12.m3u8a?t=1723820534&token=c6d4cf87460346092e1f76a8122583c4
-民视新闻,https://ushls.ballbar.net/ftvnew_taiwan/playlist-12.m3u8a?t=1723820534&token=c6d4cf87460346092e1f76a8122583c4
-华视,https://ushls.ballbar.net/ctshd_twn/playlist-12.m3u8a?t=1723820534&token=c6d4cf87460346092e1f76a8122583c4
-中视,https://ushls.ballbar.net/zhongshihd_twn/playlist-12.m3u8a?t=1723820535&token=bd78eca8b93502df117bae920095e24c
-中视新闻,https://ushls.ballbar.net/zhongshinews_twn/playlist-12.m3u8a?t=1723820536&token=6a21e264636032fe4b334f225abbfe65
-台视综合,https://ushls.ballbar.net/ttvzhonghe/playlist-12.m3u8a?t=1723820536&token=6a21e264636032fe4b334f225abbfe65
-台视TTV,https://ushls.ballbar.net/ttv_taiwan/playlist-12.m3u8a?t=1723820536&token=6a21e264636032fe4b334f225abbfe65
-台视新闻,https://ushls.ballbar.net/ttvnews_twn/playlist-12.m3u8a?t=1723820536&token=6a21e264636032fe4b334f225abbfe65
-中天亚洲,https://ushls.ballbar.net/ctiasia_twn/playlist-12.m3u8a?t=1723820537&token=3864c7b011322d4131ae018dc7353460
-中天新闻,https://ushls.ballbar.net/ctinews/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-CNN,https://ushls.ballbar.net/cnn_twn/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-TVBS欢乐台,https://ushls.ballbar.net/tvbshuanle_twn/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-TVBS,https://ushls.ballbar.net/tvbs/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-Discovery Turbo,https://ushls.ballbar.net/discoveryturbo_twn/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-中天综合,https://ushls.ballbar.net/ctizhonghe/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-BBC News,https://ushls.ballbar.net/bbcnews_twn/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-TVBS新闻,https://ushls.ballbar.net/tvbs_n/playlist-12.m3u8a?t=1723820540&token=5dd1df7f177ac7d256982473b3371230
-DMAX,https://pull-l3-cny.douyincdn.com/live/41aa178189887d90604fd07c7faa7ef6.flv
-中天娱乐,https://ushls.ballbar.net/ctient/playlist-12.m3u8a?t=1723820541&token=01cdd92330fca2012f89b39c31ebf2d1
-HBO ,https://ushls.ballbar.net/hbohd_twn/playlist-15.m3u8a?t=1723820544&token=a1e1ac70ea7fd00461d835d8ecff35c2
-HBO Hits,https://ushls.ballbar.net/hbohits_twn/playlist-12.m3u8a?t=1723820544&token=a1e1ac70ea7fd00461d835d8ecff35c2
-Discovery Science,https://pull-l3-cny.douyincdn.com/live/a3e4709efbc4153c8e046b2025805407.flv
-Discovery Channel,https://pull-l3-cny.douyincdn.com/live/c23948e44e7bdc3525203d7c38ee229f.flv
-HBO Signature,https://ushls.ballbar.net/hbosignature_twn/playlist-12.m3u8a?t=1723820545&token=4baa14168b62c1d0f0a3109d17157cc5
-寰宇新闻(备),https://ushls.ballbar.net/huanyuxinwen_twn/playlist-12.m3u8a?t=1723820545&token=4baa14168b62c1d0f0a3109d17157cc5
-HBO Family,https://ushls.ballbar.net/hbofamily/hbohd_twn/playlist-15.m3u8a?t=1723820546&token=7848d3a9d73830e713c52b4ba16cca3f
-Discovery Asia,https://ushls.ballbar.net/discoverytwn_twn/playlist-12.m3u8a?t=1723820545&token=4baa14168b62c1d0f0a3109d17157cc5
-中视(备),https://ushls.ballbar.net/zhongshihd_twn/playlist-12.m3u8a?t=1723820546&token=7848d3a9d73830e713c52b4ba16cca3f
-台视,https://ushls.ballbar.net/ttv_taiwan/playlist-12.m3u8a?t=1723820548&token=6117e23b1312d761f19b1b57e8df5454
-华视(备),https://ushls.ballbar.net/ctshd_twn/playlist-12.m3u8a?t=1723820548&token=6117e23b1312d761f19b1b57e8df5454
-中天新闻(备),https://ushls.ballbar.net/ctinews/playlist-15.m3u8a?t=1723820548&token=6117e23b1312d761f19b1b57e8df5454
-中天综合(备),https://pull-l3-cny.douyincdn.com/live/42259d2bac41bc390ed91ca836d608f8.flv
-公视(备),https://ushls.ballbar.net/ctv_taiwan/playlist-12.m3u8a?t=1723820549&token=405d8bfb722ce83da0597398fa02e590
-民视(备),https://ushls.ballbar.net/ftvhd_taiwan/playlist-12.m3u8a?t=1723820549&token=405d8bfb722ce83da0597398fa02e590
-寰宇新闻2,https://ushls.ballbar.net/huanyutaiwan_twn/playlist-15.m3u8a?t=1723820549&token=405d8bfb722ce83da0597398fa02e590
-中天亚洲(备),https://bstvcdn.ballbar.net/ctiasia_twn/playlist-12.m3u8a?t=1723820549&token=405d8bfb722ce83da0597398fa02e590
-中天娱乐(备),https://bstvcdn.ballbar.net/ctient/playlist-12.m3u8a?t=1723820550&token=fd3e1a2ff5067e1193b2ba0eee4c313b
-TVBS新闻(备),https://bstvcdn.ballbar.net/tvbs_n/playlist-12.m3u8a?t=1723820551&token=11382e442a9d5b99eafa2d78740196b2
-TVBS欢乐,https://bstvcdn.ballbar.net/tvbshuanle_twn/playlist-12.m3u8a?t=1723820551&token=11382e442a9d5b99eafa2d78740196b2
-TVBS综合,https://bstvcdn.ballbar.net/tvbs/playlist-12.m3u8a?t=1723820552&token=97fb41de16e1a4b4b28246f161087a62
-壹综合,https://ushls.ballbar.net/nexttv/playlist-12.m3u8a?t=1723820553&token=5b00aeebf4be7c2337ab82df80b7cf2f
-东森新闻(备),https://bstvcdn.ballbar.net/ettvnews/playlist-15.m3u8a?t=1723820553&token=5b00aeebf4be7c2337ab82df80b7cf2f
-东森综合(备),https://bstvcdn.ballbar.net/ettvzhonghe/playlist-15.m3u8a?t=1723820553&token=5b00aeebf4be7c2337ab82df80b7cf2f
-东森洋片(备),https://pull-l3-cny.douyincdn.com/live/ab8c1eeca99e9725cb00b244fa85093f.flv
-东森电影(备),https://bstvcdn.ballbar.net/ettvmovie/playlist-12.m3u8a?t=1723820555&token=b36c0ee9755ed7d58e0e92a5074de81f
+Error fetching video URL for ID 美亚电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID AFC亚洲旅游: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 卫视电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森幼幼: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 星空电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID EYETV戏剧: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 爱尔达综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID EYETV旅游: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 爱尔达影剧: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 卫视中文: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 博斯运动1: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 博斯无限: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 阿里郎: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID MTVLive: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 博斯高球2: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 博斯网球: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 博斯运动2: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 靖天卡通: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID AFC亚洲旅游(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙详时代: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 亚洲美食: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙华洋片: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来精彩: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 好消息2: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 星卫电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来体育: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 美食星球: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来日本: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来戏剧: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 年代新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 靖天国际: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙华电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 靖天咨询: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来育乐: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙华偶像: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 大爱1: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙华经典: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 非凡新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙华戏剧: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 寰宇财经: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森财经: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 寰宇新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森戏剧: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立都会: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森洋片: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立戏剧: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森超视: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立台湾: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID CatchPlay电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID AXNTaiwan: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID CINEMAX: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID HBO_HITS: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID HollywoodMovies: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 八大综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 八大戏剧: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 八大第一: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID HBO_: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 八大娱乐: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 华视: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 民视: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 民视台湾: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 台视新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中视新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 民视新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 台视综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 台视TTV: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天娱乐: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID BBC News: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天亚洲: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 公视: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVBS新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVBS欢乐台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVBS: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID CNN: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID DMAX: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID Discovery Science: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID Discovery Channel: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID Discovery Asia: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID HBO Hits: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中视: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID HBO Signature: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中视(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID Discovery Turbo: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID HBO Family: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 寰宇新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 寰宇新闻2: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID HBO : 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 公视(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 台视: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天综合(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 民视(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 华视(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天亚洲(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVBS新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVBS综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中天娱乐(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVBS欢乐: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森幼幼(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 壹综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 壹新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森洋片(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立台湾(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森电影(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森亚洲: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立新闻: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立国际: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 三立都会(备): 'NoneType' object has no attribute 'group'
 Error fetching video URL for ID 东森财经(备): 'NoneType' object has no attribute 'group'
-三立新闻,https://pull-l3-cny.douyincdn.com/live/42ef95f6d3f017513c82e219beb29b25.flv
-三立都会(备),https://bstvcdn.ballbar.net/sanlidouhui/playlist-12.m3u8a?t=1723820556&token=d34ea67c441b2bdb12340dafbd437a85
-三立台湾(备),https://bstvcdn.ballbar.net/sanlitaiwan/playlist-12.m3u8a?t=1723820557&token=7477700418054c1961e693077f97857c
-八大综合(备),https://bstvcdn.ballbar.net/badazhonghe/playlist-12.m3u8a?t=1723820558&token=74d5ba8dfdf6943a616bc1567d6362f3
-八大娱乐(备),https://bstvcdn.ballbar.net/badaentertain/playlist-12.m3u8a?t=1723820558&token=74d5ba8dfdf6943a616bc1567d6362f3
-八大第一(备),https://bstvcdn.ballbar.net/badafirst/playlist-12.m3u8a?t=1723820558&token=74d5ba8dfdf6943a616bc1567d6362f3
-中视新闻(备),https://bstvcdn.ballbar.net/zhongshinews_twn/playlist-12.m3u8a?t=1723820560&token=8bbadcf7ffac3e6cfa0fe56bf6e8eb77
-中视综合,https://ushls.ballbar.net/zhongshizhonghe/playlist-12.m3u8a?t=1723820560&token=8bbadcf7ffac3e6cfa0fe56bf6e8eb77
-卫视电影(备),https://bstvcdn.ballbar.net/weishimovie/playlist-12.m3u8a?t=1723820561&token=509f7517c7f6b0873b7170ce115c818d
-天映电影,https://pull-l3-cny.douyincdn.com/live/484f7c366288b101516df9d7c48e6618.flv
-龙祥电影,https://bstvcdn.ballbar.net/longxiangmovie/playlist-12.m3u8a?t=1723820562&token=ada52fbd256dcb5cb76ef40924566c45
-龙祥时代,https://pull-l3-cny.douyincdn.com/live/7485ea406ae19c303a166293253ab96a.flv
-纬来体育(备),https://ushls.ballbar.net/videolandsport/playlist-15.m3u8a?t=1723820563&token=1d7e9124caaa5586d0697db15534714e
-纬来综合(备),https://bstvcdn.ballbar.net/videolandzong/playlist-12.m3u8a?t=1723820564&token=9f2051e060e4899c55111b529f4e6d0f
-纬来电影(备),https://bstvcdn.ballbar.net/videolandmovie/playlist-12.m3u8a?t=1723820564&token=9f2051e060e4899c55111b529f4e6d0f
-纬来日本(备),https://bstvcdn.ballbar.net/videolandjapan/playlist-12.m3u8a?t=1723820564&token=9f2051e060e4899c55111b529f4e6d0f
-年代新闻(备),https://ushls.ballbar.net/niandainews_twn/playlist-12.m3u8a?t=1723820565&token=9a76d899a4b85cde49055f38834051d9
-非凡新闻(备),https://ushls.ballbar.net/feifannews_twn/playlist-12.m3u8a?t=1723820565&token=9a76d899a4b85cde49055f38834051d9
-民视新闻(备),https://ushls.ballbar.net/ftvnew_taiwan/playlist-12.m3u8a?t=1723820565&token=9a76d899a4b85cde49055f38834051d9
-卫视中文(备),https://ushls.ballbar.net/weishichinese_twn/playlist-12.m3u8a?t=1723820566&token=4f47daa4051c35a40960e6ff849f1282
-凤凰中文台,https://ushls.ballbar.net/phoenixtv_hd/playlist-15.m3u8a?t=1723820567&token=bad91199d8a689892e366279e65ec210
-凤凰资讯台,https://ushls.ballbar.net/phoenixinfo_hd/playlist-15.m3u8a?t=1723820568&token=c2e3aee673019c78c3b2569186985b21
-凤凰香港台,https://ushls.ballbar.net/mytvb/phk/index.m3u8?t=1723820568&token=c2e3aee673019c78c3b2569186985b21
-RHK32,https://ushls.ballbar.net/rhk32_twn/playlist-12.m3u8a?t=1723820568&token=c2e3aee673019c78c3b2569186985b21
-RHK31,https://ushls.ballbar.net/rhk31_twn/playlist-12.m3u8a?t=1723820568&token=c2e3aee673019c78c3b2569186985b21
-ViuTv,https://ushls.ballbar.net/viu1_twn/playlist-12.m3u8a?t=1723820570&token=b39b32d2680318c35470c6b65c2588d2
+Error fetching video URL for ID 中视新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 八大第一(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 八大综合(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 卫视电影(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 东森综合(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中视综艺: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 中视综合: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 八大娱乐(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙祥电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来体育(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来电影(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 龙祥时代: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 天映电影: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 非凡新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来日本(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 年代新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 民视新闻(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 卫视中文(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 凤凰资讯台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 纬来综合(备): 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 星空国际: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 凤凰香港台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID RHK32: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 凤凰中文台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID ViuTv: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 香港有线603: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 香港开电视: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 天映经典: 'NoneType' object has no attribute 'group'
 Error fetching video URL for ID 香港卫视: 'NoneType' object has no attribute 'group'
-美亚电影台,https://ushls.ballbar.net/meiyamovie_twn/playlist-12.m3u8a?t=1723820572&token=77764108421e512510e2969d79ddd1f5
-天映经典,https://ushls.ballbar.net/Celestial1511/playlist-15.m3u8a?t=1723820572&token=77764108421e512510e2969d79ddd1f5
-TVB娱乐新闻台,https://ushls.ballbar.net/mytvb/ctve/index.m3u8?t=1723820572&token=77764108421e512510e2969d79ddd1f5
-TVB经典台,https://ushls.ballbar.net/TVBClassicHD/playlist-12.m3u8a?t=1723820573&token=2d64217ae349f957e4d7ffe34d441755
-TVB翡翠台,https://ushls.ballbar.net/jade_twn/playlist-15.m3u8a?t=1723820574&token=300ab310f62b1fd792a8d9288c1ed507
-无线财经台,https://ushls.ballbar.net/mytvb/j5/index.m3u8?t=1723820575&token=ea59ff6bfb9fe2a70b160793576532b2
-TVB明珠台,https://ushls.ballbar.net/pearl_twn/playlist-15.m3u8a?t=1723820575&token=ea59ff6bfb9fe2a70b160793576532b2
-TVB星河台,https://bstvcdn.ballbar.net/Xinhe/playlist-15.m3u8a?t=1723820576&token=f9106fd369c5ad6c8cdac6602bb1fa54
-TVB Plus,https://bstvcdn.ballbar.net/j2_twn/playlist-12.m3u8a?t=1723820576&token=f9106fd369c5ad6c8cdac6602bb1fa54
-TVB功夫台,https://ushls.ballbar.net/mytvb/tvbgf/index.m3u8?t=1723820577&token=9c51bbdbce71b91b520167ea26ade952
-有线新闻台,https://bstvcdn.ballbar.net/news_twn/playlist-15.m3u8a?t=1723820577&token=9c51bbdbce71b91b520167ea26ade952
-无线新闻台,https://bstvcdn.ballbar.net/inews_twn/playlist-15.m3u8a?t=1723820578&token=88baf8a552ba6fd48abaa40d9541ebe6
-有线18台,https://ushls.ballbar.net/hkc18_twn/playlist-12.m3u8a?t=1723820579&token=c5236eeb40eac36faa3ffaddb8f8013a
-有线财经台,https://ushls.ballbar.net/tvbcaijing_twn/playlist-12.m3u8a?t=1723820579&token=c5236eeb40eac36faa3ffaddb8f8013a
-香港国际财经台,https://ushls.ballbar.net/tvbcaijing_twn/playlist-15.m3u8a?t=1723820581&token=65852174960c021f19e12239966561c8
-Viu Six,https://ushls.ballbar.net/viusix_twn/playlist-12.m3u8a?t=1723820581&token=65852174960c021f19e12239966561c8
-now爆谷星影台,https://ushls.ballbar.net/nowxyt_twn/playlist-12.m3u8a?t=1723820582&token=d8109af60e1f9c701513848e5ac362fc
-奇妙资讯,https://ushls.ballbar.net/78/playlist.m3u8f?t=1723820582&token=d8109af60e1f9c701513848e5ac362fc
-now財經台,https://pull-l3-cny.douyincdn.com/live/c926b9c482de0f00b80050a59d756ffd.flv
-now新闻台,https://ushls.ballbar.net/nownews_twn/playlist-12.m3u8a?t=1723820584&token=67be987c4bbd927dd9a094bfe4909431
-now直播台,https://pull-l3-cny.douyincdn.com/live/84ea2433082063768e9e26b4afdc27df.flv
-now Sports,https://ushls.ballbar.net/nowsports_twn/playlist-12.m3u8a?t=1723820585&token=c1f122da03ac2787dac75f7b4b920f81
-
-
+Error fetching video URL for ID TVB经典台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 美亚电影台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 无线财经台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVB娱乐新闻台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVB明珠台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVB功夫台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVB星河台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVB翡翠台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID RHK31: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 有线新闻台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID TVB Plus: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 有线电影台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 香港国际财经台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 有线财经台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 有线18台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID Viu Six: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID now直播台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID now爆谷星影台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 无线新闻台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID now新闻台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID now財經台: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 奇妙资讯: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 澳视卫星台MACAU: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID 澳视生活: 'NoneType' object has no attribute 'group'
+Error fetching video URL for ID now Sports: 'NoneType' object has no attribute 'group'
