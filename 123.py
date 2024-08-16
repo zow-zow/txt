@@ -1,54 +1,32 @@
-from bs4 import BeautifulSoup
-import requests
-import re
-import concurrent.futures
-
-# 设置请求头
-headers = {
-    'Host': 'freegat.us.kg',
-    'Cache-Control': 'max-age=0',
-    'Upgrade-Insecure-Requests': '1',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36 XiaoBai1/10.4.5312.1827 (XBCEF)',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'Accept-Encoding': 'gzip, deflate',
-    'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6',
-    'Cookie': 'PHPSESSID=65s16sjaus4iag4amk00onk3d3',
-    'Proxy-Connection': 'keep-alive'
-}
-
-def get_video_urls(channel):
-    try:
-        channel_name = channel.find('a').text.strip()  # 获取频道名
-        channel_url = channel.find('a')['href']  # 获取频道链接
-        #print(f"正在处理频道: {channel_url}")
-        response = requests.get(channel_url, headers=headers)
-        print(response.text)
-        pattern = re.compile(r'videoUrl: "(.*?)"', re.S)
-        video_urls = re.findall(pattern, response.text)
-
-        results = []
-        if video_urls:
-            for video_url in video_urls:
-                results.append(f"{channel_name},{video_url}")
-                #print(f"{channel_name},{video_url}")
-        return results
-    
-    
-    except Exception as e:
-        return [f"处理频道时出错: {e}"]
-
-response = requests.get('http://freegat.us.kg/', headers=headers)
-
-if response.status_code == 200:
-    html_content = response.text
-    ##print(html_content)
-    # 使用BeautifulSoup解析HTML内容
-    soup = BeautifulSoup(html_content, 'html.parser')
-    # 查找所有频道的<li>标签
-    channels = soup.find_all('li', class_='channel')
-    print(f"共找到{len(channels)}个频道")
-    # 打开文件，以写入模式，如果文件不存在则会自动创建
-    with open('output.txt', 'w', encoding='utf-8') as file:
-        # 使用多线程处理频道链接
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = [executor.submit(get_video_urls, channel) for channel in channels]
+import subprocess  
+  
+# 定义FFmpeg命令  
+ffmpeg_command = [  
+    'ffmpeg',  
+    '-re',  
+    '-stream_loop', '-1',  
+    '-i', 'https://ushls.ballbar.net/eltayingju_twn/playlist-12.m3u8a?t=1723798152&token=2a8d6f6ed890c2e3a2839fd42a31091b',  # 替换为你的输入流URL  
+    '-bsf:a', 'aac_adtstoasc',  
+    '-vcodec', 'copy',  
+    '-acodec', 'copy',  
+    '-f', 'flv',  
+    '-y',  
+    '-reconnect', '1',  
+    '-reconnect_at_eof', '1',  
+    '-reconnect_streamed', '1',  
+    'rtmp://ali.push.yximgs.com/live/woshimimi_liu_liang_duo_dao_yong_bu_wan_tui_zhe_wan'  # 替换为你的推流服务器地址  
+]  #播放地址http://ali.hlspull.yximgs.com/live/woshimimi_liu_liang_duo_dao_yong_bu_wan_tui_zhe_wan.flv
+  
+# 使用subprocess启动FFmpeg进程  
+try:  
+    process = subprocess.Popen(ffmpeg_command, stderr=subprocess.PIPE)  
+    # 你可以在这里添加代码来监控FFmpeg进程的输出或错误  
+    # 例如，读取stderr来查看FFmpeg的日志输出  
+    while True:  
+        line = process.stderr.readline().decode('utf-8').strip()  
+        if not line:  
+            break  
+        print(line)  
+    process.wait()  # 等待FFmpeg进程结束  
+except Exception as e:  
+    print(f"An error occurred: {e}")
