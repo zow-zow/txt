@@ -28,7 +28,7 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install selenium requests futures eventlet pytz beautifulsoup4
+        run: pip install selenium requests futures eventlet pytz beautifulsoup4 pycryptodome
 
       - name: Install FFmpeg
         run: |
