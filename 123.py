@@ -5,7 +5,7 @@ ffmpeg_command = [
     'ffmpeg',  
     '-re',  
     '-stream_loop', '-1',  
-    '-i', 'https://edge6a.v2h-cdn.com/enew/enew.stream/chunklist.m3u8',  # 替换为你的输入流URL  
+    '-i', 'https://stream1.freetv.fun/wu-xian-xin-wen-1.m3u8',  # 替换为你的输入流URL  
     '-bsf:a', 'aac_adtstoasc',  
     '-vcodec', 'copy',  
     '-acodec', 'copy',  
