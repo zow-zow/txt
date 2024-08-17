@@ -5,7 +5,7 @@ ffmpeg_command = [
     'ffmpeg',  
     '-re',  
     '-stream_loop', '-1',  
-    '-i', 'https://live.hkdvb.com/hls/live/83.m3u8?token=749067321541382',  # 替换为你的输入流URL  
+    '-i', 'https://live.hkdvb.com/hls/live/332.m3u8?token=749067321541382',  # 替换为你的输入流URL  
     '-bsf:a', 'aac_adtstoasc',  
     '-vcodec', 'copy',  
     '-acodec', 'copy',  
