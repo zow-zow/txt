@@ -5,7 +5,7 @@ ffmpeg_command = [
     'ffmpeg',  
     '-re',  
     '-stream_loop', '-1',  
-    '-i', 'http://zowzow.yundown.cf/cscs.php?id=6',  # 替换为你的输入流URL  
+    '-i', 'http://zowzow.yundown.cf/cscs.php?id=1',  # 替换为你的输入流URL  
     '-bsf:a', 'aac_adtstoasc',  
     '-vcodec', 'copy',  
     '-acodec', 'copy',  
