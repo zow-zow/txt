@@ -1,32 +1,56 @@
-import subprocess  
-  
-# 定义FFmpeg命令  
-ffmpeg_command = [  
-    'ffmpeg',  
-    '-re',  
-    '-stream_loop', '-1',  
-    '-i', 'https://stream1.freetv.fun/wu-xian-xin-wen-1.m3u8',  # 替换为你的输入流URL  
-    '-bsf:a', 'aac_adtstoasc',  
-    '-vcodec', 'copy',  
-    '-acodec', 'copy',  
-    '-f', 'flv',  
-    '-y',  
-    '-reconnect', '1',  
-    '-reconnect_at_eof', '1',  
-    '-reconnect_streamed', '1',  
-    'rtmp://ali.push.yximgs.com/live/woshimimi_liu_liang_duo_dao_yong_bu_wan_tui_zhe_wan'  # 替换为你的推流服务器地址  
-]  #播放地址http://ali.hlspull.yximgs.com/live/woshimimi_liu_liang_duo_dao_yong_bu_wan_tui_zhe_wan.flv
-  
-# 使用subprocess启动FFmpeg进程  
-try:  
-    process = subprocess.Popen(ffmpeg_command, stderr=subprocess.PIPE)  
-    # 你可以在这里添加代码来监控FFmpeg进程的输出或错误  
-    # 例如，读取stderr来查看FFmpeg的日志输出  
-    while True:  
-        line = process.stderr.readline().decode('utf-8').strip()  
-        if not line:  
-            break  
-        print(line)  
-    process.wait()  # 等待FFmpeg进程结束  
-except Exception as e:  
-    print(f"An error occurred: {e}")
+import subprocess
+import threading
+
+# 定义一个函数来启动FFmpeg进程
+def start_ffmpeg(input_url, output_url):
+    ffmpeg_command = [
+        'ffmpeg',
+        '-re',
+        '-stream_loop', '-1',
+        '-i', input_url,
+        '-bsf:a', 'aac_adtstoasc',
+        '-vcodec', 'copy',
+        '-acodec', 'copy',
+        '-f', 'flv',
+        '-y',
+        '-reconnect', '1',
+        '-reconnect_at_eof', '1',
+        '-reconnect_streamed', '1',
+        output_url
+    ]
+
+    try:
+        process = subprocess.Popen(ffmpeg_command, stderr=subprocess.PIPE)
+        # 读取并打印FFmpeg进程的输出
+        while True:
+            line = process.stderr.readline().decode('utf-8').strip()
+            if not line:
+                break
+            print(line)
+        process.wait()
+    except Exception as e:
+        print(f"An error occurred while streaming {input_url}: {e}")
+
+# 输入流和对应的推流地址
+streams = [
+    ('http://zowzow.yundown.cf/php/2.php', 'rtmp://ali.push.yximgs.com/live/cs1'),
+#    ('https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs2'),
+ #   ('https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs3'),
+#    ('https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs4'),
+ #   ('https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs5'),
+ #   ('https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs6'),
+#    ('https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs7'),
+#    ('https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs8'),
+
+]     #播放地址http://ali.hlspull.yximgs.com/live/cs1.flv
+
+# 为每个流启动一个独立的线程来推流
+threads = []
+for input_url, output_url in streams:
+    thread = threading.Thread(target=start_ffmpeg, args=(input_url, output_url))
+    thread.start()
+    threads.append(thread)
+
+# 等待所有线程结束
+for thread in threads:
+    thread.join()
