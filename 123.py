@@ -33,7 +33,7 @@ def start_ffmpeg(input_url, output_url):
 
 # 输入流和对应的推流地址
 streams = [
-    ('http://zowzow.yundown.cf/php/yutube.php', 'rtmp://ali.push.yximgs.com/live/cs1'),
+    ('http://www.mytvsuper.us.kg/live.php?id=feicui', 'rtmp://ali.push.yximgs.com/live/cs1'),
 #    ('https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs2'),
  #   ('https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs3'),
 #    ('https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs4'),
