@@ -3,21 +3,21 @@ import threading
 
 # 定义一个函数来启动FFmpeg进程
 def start_ffmpeg(input_url, output_url):
-  ffmpeg_command = [
-    'ffmpeg',
-    '-re',
-    '-stream_loop', '-1',
-    '-i', input_url,
-    '-c:v', 'libx264',  # 使用libx264编解码器
-    '-preset', 'veryfast',  # 可以调整压缩速度和质量
-    '-c:a', 'aac',  # 明确设置AAC音频编解码器
-    '-b:a', '128k',  # 设置音频比特率
-    '-f', 'flv',
-    '-y',
-    '-reconnect', '1',
-    '-reconnect_at_eof', '1',
-    '-reconnect_streamed', '1',
-    output_url
+    ffmpeg_command = [
+        'ffmpeg',
+        '-re',
+        '-stream_loop', '-1',
+        '-i', input_url,
+        '-c:v', 'libx264',  # 使用libx264编解码器
+        '-preset', 'veryfast',  # 可以调整压缩速度和质量
+        '-c:a', 'aac',  # 明确设置AAC音频编解码器
+        '-b:a', '128k',  # 设置音频比特率
+        '-f', 'flv',
+        '-y',
+        '-reconnect', '1',
+        '-reconnect_at_eof', '1',
+        '-reconnect_streamed', '1',
+        output_url
 ]
 
     try:
