@@ -42,7 +42,7 @@ streams = [
 #    ('https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs7'),
 #    ('https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs8'),
 
-]     #播放地址http://ali.hlspull.yximgs.com/live/cs1.flv
+]     #播放地址 http://ali.hlspull.yximgs.com/live/cs1.flv
 
 # 为每个流启动一个独立的线程来推流
 threads = []
