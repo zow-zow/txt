@@ -8,6 +8,7 @@ def start_ffmpeg(input_url, output_url):
         '-re',
         '-stream_loop', '-1',
         '-user_agent', 'okhttp/4.12.0',  # 设置User-Agent
+        '-headers', 'User-Agent: okhttp/4.12.0\r\n',  # 设置ts文件的User-Agent
         '-i', input_url,
         '-c:v', 'libx264',  # 使用libx264编解码器
         '-preset', 'veryfast',  # 可以调整压缩速度和质量
