@@ -35,7 +35,7 @@ def start_ffmpeg(input_url, output_url):
 
 # 输入流和对应的推流地址
 streams = [
-    ('http://success.success52592.online/61fd7113def5e604643efccde83c2b08/38c2dce17fcac06647c991ba83cf682cb95cd399ec40cbe2967294d048d7df80/5aff1bcab410e069b92a56e0123fe342/index.m3u8', 'rtmp://ali.push.yximgs.com/live/cs1'),
+    ('https://success.success52592.online/61fd7113def5e604643efccde83c2b08/38c2dce17fcac06647c991ba83cf682cb95cd399ec40cbe2967294d048d7df80/5aff1bcab410e069b92a56e0123fe342/index.m3u8', 'rtmp://ali.push.yximgs.com/live/cs1'),
 #    ('https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs2'),
  #   ('https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs3'),
 #    ('https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8', 'rtmp://ali.push.yximgs.com/live/cs4'),
