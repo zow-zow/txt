@@ -71,7 +71,7 @@ def measure_download_speed(url, name, duration=10):
     try:
         print(f"开始测量下载速度：{url}")
         start_time = time.time()
-        response = requests.get(url, stream=True, timeout=5)  # 设置超时时间
+        response = requests.get(url, stream=True, timeout=3)  # 设置超时时间
 
         total_downloaded = 0  # total downloaded data in bytes
         for data in response.iter_content(1024*1024):  # read 1MB at a time
@@ -180,14 +180,14 @@ def main():
     sorted_results = sorted(results, key=lambda x: x[0])
 
     # 在插入内容前添加标签
-    with open("ziyong.txt", "w") as file:
+    with open("/www/wwwroot/zhibophp/源/cs.txt", "w") as file:
         file.write("\n#湖南,#genre#\n")
         
     # 输出结果到文件 ztv.txt
-    with open("ziyong.txt", "a") as file:
+    with open("/www/wwwroot/zhibophp/源/cs.txt", "a") as file:
         for result in sorted_results:
             if len(result) >= 3 and result[2] > 0:  # 同样在这里检查
                 file.write(f"{result[0]},{result[1]} -- {result[2]:.2f} MB/s\n")
-    print("处理完成，结果已写入 ziyong.txt 文件")
+    print("处理完成，结果已写入 cs.txt 文件")
 if __name__ == "__main__":
     main()
