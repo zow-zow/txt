@@ -180,11 +180,11 @@ def main():
     sorted_results = sorted(results, key=lambda x: x[0])
 
     # 在插入内容前添加标签
-    with open("/www/wwwroot/zhibophp/源/cs.txt", "w") as file:
+    with open("cs.txt", "w") as file:
         file.write("\n#湖南,#genre#\n")
         
     # 输出结果到文件 ztv.txt
-    with open("/www/wwwroot/zhibophp/源/cs.txt", "a") as file:
+    with open("cs.txt", "a") as file:
         for result in sorted_results:
             if len(result) >= 3 and result[2] > 0:  # 同样在这里检查
                 file.write(f"{result[0]},{result[1]} -- {result[2]:.2f} MB/s\n")
