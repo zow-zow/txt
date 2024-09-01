@@ -71,7 +71,7 @@ def measure_download_speed(url, name, duration=10):
     try:
         print(f"开始测量下载速度：{url}")
         start_time = time.time()
-        response = requests.get(url, stream=True, timeout=3)  # 设置超时时间
+        response = requests.get(url, stream=True, timeout=5)  # 设置超时时间
 
         total_downloaded = 0  # total downloaded data in bytes
         for data in response.iter_content(1024*1024):  # read 1MB at a time
