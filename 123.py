@@ -6,10 +6,10 @@ import json
 
 # 定义初始URL列表
 urls = ['https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A长沙&page=1&t=v4%2Bv6%2Bweb', 
-        'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A衡阳&page=1&t=v4%2Bv6%2Bweb',
-        'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A怀化&page=1&t=v4%2Bv6%2Bweb',
-        'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A岳阳&page=1&t=v4%2Bv6%2Bweb',
-        'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A株洲&page=1&t=v4%2Bv6%2Bweb',
+        # 'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A衡阳&page=1&t=v4%2Bv6%2Bweb',
+        # 'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A怀化&page=1&t=v4%2Bv6%2Bweb',
+        # 'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A岳阳&page=1&t=v4%2Bv6%2Bweb',
+        # 'https://www.zoomeye.org/api/search?q=udpxy+%2Bsubdivisions%3A%22湖南%22+%2Bcity%3A株洲&page=1&t=v4%2Bv6%2Bweb',
 
 
     ]  # 添加更多URL
@@ -71,16 +71,18 @@ def measure_download_speed(url, name, duration=10):
     try:
         print(f"开始测量下载速度：{url}")
         start_time = time.time()
-        response = requests.get(url, stream=True, timeout=5)  # 设置超时时间
+        response = requests.get(url, stream=True, timeout=3)  # 设置超时时间
 
         total_downloaded = 0  # total downloaded data in bytes
         for data in response.iter_content(1024*1024):  # read 1MB at a time
-            if time.time() - start_time > duration:
-                break
             total_downloaded += len(data)
+            break  # 读取完1MB的数据后立即结束循环
 
         elapsed_time = time.time() - start_time
-        speed = total_downloaded / elapsed_time / 1024 / 1024  # speed in MB/s
+        if elapsed_time > duration:
+            speed = 0.0  # 如果总时间超过10秒，赋值速度为0
+        else:
+            speed = total_downloaded / elapsed_time / 1024 / 1024  # speed in MB/s
         return name, url, speed  # 返回name和url
     except (requests.exceptions.RequestException, ConnectionError) as e:
         print(f"Failed to download {url}: {e}")
@@ -180,14 +182,14 @@ def main():
     sorted_results = sorted(results, key=lambda x: x[0])
 
     # 在插入内容前添加标签
-    with open("cs.txt", "w") as file:
+    with open("ziyong.txt", "w") as file:
         file.write("\n#湖南,#genre#\n")
         
     # 输出结果到文件 ztv.txt
-    with open("cs.txt", "a") as file:
+    with open("ziyong.txt", "a") as file:
         for result in sorted_results:
             if len(result) >= 3 and result[2] > 0:  # 同样在这里检查
                 file.write(f"{result[0]},{result[1]} -- {result[2]:.2f} MB/s\n")
-    print("处理完成，结果已写入 cs.txt 文件")
+    print("处理完成，结果已写入 ziyong.txt 文件")
 if __name__ == "__main__":
     main()
