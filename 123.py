@@ -1,32 +1,39 @@
-import subprocess  
-  
-# 定义FFmpeg命令  
-ffmpeg_command = [  
-    'ffmpeg',  
-    '-re',  
-    '-stream_loop', '-1',  
-    '-i', 'https://z88.ubtvfans.com/live/rx1/18/9396c2544377ae33b75b571c76726ee3/index.m3u8',  # 替换为你的输入流URL  
-    '-bsf:a', 'aac_adtstoasc',  
-    '-vcodec', 'copy',  
-    '-acodec', 'copy',  
-    '-f', 'flv',  
-    '-y',  
-    '-reconnect', '1',  
-    '-reconnect_at_eof', '1',  
-    '-reconnect_streamed', '1',  
-    'rtmp://ali.push.yximgs.com/live/feicui'  # 替换为你的推流服务器地址  
-]   #播放地址http://ali.hlspull.yximgs.com/live/feicui.flv
-  
-# 使用subprocess启动FFmpeg进程  
-try:  
-    process = subprocess.Popen(ffmpeg_command, stderr=subprocess.PIPE)  
-    # 你可以在这里添加代码来监控FFmpeg进程的输出或错误  
-    # 例如，读取stderr来查看FFmpeg的日志输出  
-    while True:  
-        line = process.stderr.readline().decode('utf-8').strip()  
-        if not line:  
-            break  
-        print(line)  
-    process.wait()  # 等待FFmpeg进程结束  
-except Exception as e:  
-    print(f"An error occurred: {e}")
+import requests
+
+# 定义请求的URL
+url = 'http://192.210.231.23:7878/api.php?act=live&app=10000'
+
+# 定义请求头
+headers = {
+    'Accept-Language': 'zh-CN,zh;q=0.8',
+    'User-Agent': 'okhttp/3.12.11',
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'Content-Length': '50',  # 这个头部通常不需要手动设置，requests会自动计算
+    'Host': '192.210.231.23:7878',
+    'Connection': 'Keep-Alive',
+    'Accept-Encoding': 'gzip'
+}
+
+# 定义请求体
+data = {
+    't': '1726105348',
+    'sign': '17e7c0fedf564d7efb072ddee385dc84'
+}
+
+# 尝试发送POST请求
+try:
+    response = requests.post(url, headers=headers, data=data)
+    # 去掉响应数据中的空格和换行符
+    cleaned_response_text = response.text.strip()
+    # 打印响应状态码
+    print(f"Status Code: {response.status_code}")
+    
+    # 打印响应内容
+    print("Response Content:")
+    print(cleaned_response_text)
+    with open('aiyudata.txt', 'w', encoding='utf-8') as f:
+        f.write(cleaned_response_text)
+except requests.exceptions.RequestException as e:
+    # 打印错误信息
+    print("An error occurred while trying to send the request:")
+    print(e)
